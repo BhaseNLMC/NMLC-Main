@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function () {
         };
 
         // Send form data to the server
-        fetch('https://render.com/docs/web-services#port-binding:10000/send-email', {
+        fetch('https://nmlc-main.onrender.com:10000/send-email', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
