@@ -37,4 +37,16 @@ document.addEventListener('DOMContentLoaded', function () {
     function showForm() {
         const formContainer = document.getElementById('formContainer');
         formContainer.classList.remove('hidden'); // Reveal form
+    
+    function showForm() {
+        const formContainer = document.getElementById('formContainer');
+        const startPage = document.querySelector('.start-page');
+            
+        // Hide the start page
+        startPage.style.display = 'none';
+        
+        // Show the form
+        formContainer.classList.remove('hidden');
+        formContainer.style.animation = 'fadeIn 1s forwards'; // Optional: Add a fade-in animation
+        }
 });

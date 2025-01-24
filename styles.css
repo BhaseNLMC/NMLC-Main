@@ -108,5 +108,9 @@ button:hover {
         transform: translateY(0);
         opacity: 1;
     }
+    .hidden {
+        display: none;
+        opacity: 0; /* For smooth transitions */
+    }
 }
 
