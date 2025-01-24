@@ -34,4 +34,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 alert('An error occurred while submitting the form.');
             });
     });
+    function showForm() {
+        const formContainer = document.getElementById('formContainer');
+        formContainer.classList.remove('hidden'); // Reveal form
 });
