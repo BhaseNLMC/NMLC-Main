@@ -13,13 +13,16 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- start page -->
     <div class="start-page">
         <h1 class="welcome-message">National Management Legal Counsel</h1>
         <p class="subtext">National Counsel for Management in California, Colorado, and Nevada</p>
         <button class="start-button" onclick="showForm()">Get Started with NMLC</button>
     </div>
+
+    <!--form container (hidden by default) -->
+    <div id="formContainer" class="form-container hidden">
     <h1>Intake Form</h1>
-    <div id="formContainer" class="form-container hidden"></div>
     <form id="multiStepForm">
         <div class="form-step active">
             <label for="name">Your Name:</label>
@@ -42,6 +45,7 @@
             <button type="submit">Submit</button>
         </div>
     </form>
+</div>
     <script src="script.js"></script>
 </body>
 </html>
