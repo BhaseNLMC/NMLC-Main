@@ -1,3 +1,17 @@
+// Show form function (accessible globally)
+function showForm() {
+    const formContainer = document.getElementById('formContainer');
+    const startPage = document.querySelector('.start-page');
+
+    // Hide the start page
+    startPage.style.display = 'none';
+
+    // Show the form container
+    formContainer.classList.remove('hidden');
+    formContainer.style.animation = 'fadeIn 1s forwards'; // Optional fade-in animation
+}
+
+// Main script
 document.addEventListener('DOMContentLoaded', function () {
     const form = document.getElementById('multiStepForm');
 
@@ -34,15 +48,4 @@ document.addEventListener('DOMContentLoaded', function () {
                 alert('An error occurred while submitting the form.');
             });
     });
-    function showForm() {
-        const formContainer = document.getElementById('formContainer');
-        const startPage = document.querySelector('.start-page');
-    
-        // Hide the start page
-        startPage.style.display = 'none';
-    
-        // Show the form container
-        formContainer.classList.remove('hidden');
-        formContainer.style.animation = 'fadeIn 1s forwards'; // Optional fade-in animation
-    }
 });
