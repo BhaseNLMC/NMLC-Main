@@ -10,13 +10,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Animation Sequence
     setTimeout(() => {
-        word1.classList.add('fade-in'); // "National" fades in
-    }),
-
-    setTimeout(() => {
-        word1.style.display = 'none'; // Hide "National"
-        word2.classList.remove('hidden'); // Show "Management"
-        word2.classList.add('pull-up'); // "Management" pulls up
+       word2.classList.remove('hidden'); // Show "Management"
+       word2.classList.add('pull-up'); // "Management" pulls up
     }, 2000);
 
     setTimeout(() => {
@@ -32,9 +27,8 @@ document.addEventListener('DOMContentLoaded', function () {
     }, 5000);
 
     setTimeout(() => {
-        word3.style.display = 'none'; // Hide "Counsel"
-        finalText.classList.remove('hidden'); // Show "National Counsel"
-        finalText.classList.add('shrink'); // Shrink animation
+        word1.classList.add('shrink'); // Shrink animation
+        word3.classList.add('shrink');
     }, 6500);
 
     setTimeout(() => {
