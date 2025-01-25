@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // Animation Sequence
     setTimeout(() => {
         word1.classList.add('fade-in'); // "National" fades in
-    }, 500);
+    }),
 
     setTimeout(() => {
         word1.style.display = 'none'; // Hide "National"
@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }, 5000);
 
     setTimeout(() => {
-        word4.style.display = 'none'; // Hide "Counsel"
+        word3.style.display = 'none'; // Hide "Counsel"
         finalText.classList.remove('hidden'); // Show "National Counsel"
         finalText.classList.add('shrink'); // Shrink animation
     }, 6500);

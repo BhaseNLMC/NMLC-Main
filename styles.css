@@ -1,8 +1,8 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f9f9f9;
+    background-color: #444343;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -19,7 +19,7 @@ body {
 .animated-text span {
     display: inline-block;
     font-size: 3rem;
-    color: #333;
+    color: #270ba3;
     opacity: 0;
 }
 
@@ -42,7 +42,7 @@ body {
 }
 
 .fade-in-logo {
-    width: 200px;
+    width: 400px;
     margin-top: 20px;
     animation: fadeInLogo 1.5s forwards;
 }
@@ -101,7 +101,7 @@ h1 {
 }
 
 form {
-    background: #fff;
+    background: #444343;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
