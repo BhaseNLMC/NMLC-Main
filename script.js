@@ -27,24 +27,18 @@ document.addEventListener('DOMContentLoaded', function () {
     }, 5000);
 
     setTimeout(() => {
-        word1.classList.remove('hidden') // Re-Reveal National
-        word1.classList.add('pull-up'); // National Pulls Up
-        word2.classList.remove('hidden') // Re-Reveal Management
-        word2.classList.add('pull-up'); // Management Pulls Up
-        word3.classList.remove('hidden') // Re-Reveal Legal
-        word3.classList.add('pull-up'); // Legal Pulls Up
-        word4.classList.remove('hidden') // Re-Reveal Counsel
-        word4.classList.add('pull-up'); // Counsel Pulls Up
-    }
-
-    setTimeout(() => {
         logo.classList.remove('hidden'); // Logo fades in
         logo.classList.add('fade-in-logo');
     }, 8000);
 
     setTimeout(() => {
+        finalText.classList.remove('hidden'); // National Management Legal Counsel 
+        finalText.classList.add('pull-up'); 
+    }, 8000)
+
+    setTimeout(() => {
         // Hide the animation container and show the form
         document.querySelector('.animation-container').style.display = 'none';
         formContainer.classList.remove('hidden'); // Reveal the form
-    }, 9500);
+    }, 12500);
 });
