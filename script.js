@@ -27,8 +27,10 @@ document.addEventListener('DOMContentLoaded', function () {
     }, 5000);
 
     setTimeout(() => {
+        word1.classList.remove('hidden') // Re-Reveal National
+        word3.classList.remove('hidden') // Re-Reveal Counsel
         word1.classList.add('shrink'); // Shrink animation
-        word3.classList.add('shrink');
+        word3.classList.add('shrink'); // Shrink animation
     }, 6500);
 
     setTimeout(() => {
