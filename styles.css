@@ -10,15 +10,21 @@ body {
     overflow: hidden;
 }
 
+/* Animation Container */
 .animation-container {
     text-align: center;
 }
 
+/* Words Animation */
 .animated-text span {
     display: inline-block;
     font-size: 3rem;
     color: #333;
-    opacity: 0; /* Hidden initially */
+    opacity: 0;
+}
+
+.hidden {
+    display: none;
 }
 
 .fade-in {
@@ -26,25 +32,18 @@ body {
 }
 
 .pull-up {
-    opacity: 0;
-    position: relative;
     animation: pullUp 1.5s forwards;
+    position: relative;
 }
 
 .shrink {
-    opacity: 0;
-    font-size: 3rem;
     animation: shrink 1.5s forwards;
-}
-
-.hidden {
-    display: none;
+    font-size: 2rem;
 }
 
 .fade-in-logo {
-    width: 100px;
+    width: 200px;
     margin-top: 20px;
-    opacity: 0;
     animation: fadeInLogo 1.5s forwards;
 }
 
@@ -74,15 +73,11 @@ body {
 }
 
 @keyframes shrink {
-    0% {
+    from {
         opacity: 0;
         font-size: 3rem;
     }
-    50% {
-        opacity: 1;
-        font-size: 3rem;
-    }
-    100% {
+    to {
         opacity: 1;
         font-size: 2rem;
     }
@@ -91,11 +86,14 @@ body {
 @keyframes fadeInLogo {
     from {
         opacity: 0;
+        transform: scale(0.8);
     }
     to {
         opacity: 1;
+        transform: scale(1);
     }
 }
+
 
 h1 {
     text-align: center;
