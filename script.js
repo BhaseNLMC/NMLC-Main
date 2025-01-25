@@ -28,10 +28,14 @@ document.addEventListener('DOMContentLoaded', function () {
 
     setTimeout(() => {
         word1.classList.remove('hidden') // Re-Reveal National
+        word1.classList.add('pull-up'); // National Pulls Up
         word2.classList.remove('hidden') // Re-Reveal Management
+        word2.classList.add('pull-up'); // Management Pulls Up
         word3.classList.remove('hidden') // Re-Reveal Legal
+        word3.classList.add('pull-up'); // Legal Pulls Up
         word4.classList.remove('hidden') // Re-Reveal Counsel
-    }, 6500);
+        word4.classList.add('pull-up'); // Counsel Pulls Up
+    }
 
     setTimeout(() => {
         logo.classList.remove('hidden'); // Logo fades in
