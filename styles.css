@@ -1,8 +1,100 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f9f9f9;
-    margin: 20px;
+    margin: 0;
     padding: 0;
+    background-color: #f9f9f9;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.animation-container {
+    text-align: center;
+}
+
+.animated-text span {
+    display: inline-block;
+    font-size: 3rem;
+    color: #333;
+    opacity: 0; /* Hidden initially */
+}
+
+.fade-in {
+    animation: fadeIn 1.5s forwards;
+}
+
+.pull-up {
+    opacity: 0;
+    position: relative;
+    animation: pullUp 1.5s forwards;
+}
+
+.shrink {
+    opacity: 0;
+    font-size: 3rem;
+    animation: shrink 1.5s forwards;
+}
+
+.hidden {
+    display: none;
+}
+
+.fade-in-logo {
+    width: 100px;
+    margin-top: 20px;
+    opacity: 0;
+    animation: fadeInLogo 1.5s forwards;
+}
+
+/* Keyframes */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes pullUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    50% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+}
+
+@keyframes shrink {
+    0% {
+        opacity: 0;
+        font-size: 3rem;
+    }
+    50% {
+        opacity: 1;
+        font-size: 3rem;
+    }
+    100% {
+        opacity: 1;
+        font-size: 2rem;
+    }
+}
+
+@keyframes fadeInLogo {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 h1 {
